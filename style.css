@@ -1,0 +1,117 @@
+body {
+    background-color: #F2EAE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    width: 600px;
+    height: 450px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.photo{
+    width: 300px;
+    height: 450px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-image: url('images/image-product-desktop.jpg');
+    background-size: cover;
+}
+.text{
+    width: 100%;
+    width: 300px;
+}
+.text > *{
+    margin: 0;
+    margin-left: 32px;
+    margin-bottom: 24px;
+}
+p{
+    font-size: 14px;
+}
+.Perfume{
+    font-family: Montserrat;
+    color: #6C7289;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+h1{
+    font-family: Fraunces;
+    width: 236px;
+}
+.main_text{
+    color: #6C7289;
+    width: 237px;
+    font-family: Montserrat;
+}
+.price{
+    display: flex;
+    margin-top: 29px;
+    margin-bottom: 30px;
+}
+.second_price{
+    margin: 0;
+    padding-right: 20px;
+    font-size: 32px;
+    color: #3D8168;
+    font-weight: bold;
+}
+.first_price{
+    margin: 0;
+    padding-top: 10px;
+    text-decoration: line-through;
+    color: #6C7289;
+}
+.svg{
+    padding-right: 5px;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 236px;
+    height: 48px;
+    border-radius: 8px;
+    border: 0;
+    background-color: #3D8168;
+    color: #FFFFFF;
+}
+button:active{
+    background-color: #1A4032;
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        width: 343px;
+        height: 611px;
+        background-color: #fff;
+        display: block;
+    }
+    .photo{
+        border-radius: 0px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        width: 343px;
+        height: 200px;
+        background-image: url('./images/image-product-mobile.jpg');
+    }
+    h1{
+        width: 18rem
+    }
+    .text{
+        width: 295px;
+    }
+    .main_text{
+        width: 18.5rem
+    }
+
+    button{
+        width: 100%;
+    }
+}
